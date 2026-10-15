@@ -12,3 +12,13 @@ async function getAllBooks() {
 }
 
 getAllBooks();
+
+async function getBookByISBN(isbn) {
+  try {
+    const response = await axios.get(`${baseUrl}/isbn/${isbn}`);
+    console.log(response.data);
+  } catch (error) {
+    console.error("Could not retrieve that book:", error.message);
+  }
+}
+getBookByISBN("1");
