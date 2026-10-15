@@ -4,9 +4,8 @@ X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 186
 ETag: W/"ba-xdAKDspTmeHQTk+OaWpHcucgRDI"
-Set-Cookie: connect.sid=s%3Ai_BUDf0s2E2zREIeuoSRrmriDch0MGav.4IPoMiisiSpJnslUQzUx9xE5%2BRVNPIZqaUpgEJTyZV8; Path=/; HttpOnly
 Date: Thu, 15 Oct 2026 04:16:38 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-{"message":"User successfully logged in","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF2aSIsImlhdCI6MTc5MjAzNzc5OH0.kEJJijSV8HOQ2I5F8MWBJi-iCI-V56PXXtql7rTShQ8"}
+{"message":"User successfully logged in","accessToken":"[REDACTED]"}
