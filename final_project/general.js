@@ -34,3 +34,16 @@ async function getBooksByAuthor(author) {
   }
 }
 getBooksByAuthor("Chinua Achebe");
+
+async function getBooksByTitle(title) {
+  try {
+    const response = await axios.get(
+      `${baseUrl}/title/${encodeURIComponent(title)}`
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error("Could not retrieve books by title:", error.message);
+  }
+}
+
+getBooksByTitle("Things Fall Apart");
