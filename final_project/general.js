@@ -22,3 +22,15 @@ async function getBookByISBN(isbn) {
   }
 }
 getBookByISBN("1");
+
+async function getBooksByAuthor(author) {
+  try {
+    const response = await axios.get(
+      `${baseUrl}/author/${encodeURIComponent(author)}`
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error("Could not retrieve books by author:", error.message);
+  }
+}
+getBooksByAuthor("Chinua Achebe");
